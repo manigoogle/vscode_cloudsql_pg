@@ -1,6 +1,6 @@
 # PostgreSQL for Visual Studio Code (Preview)
 
-![PostgreSQL for Visual Studio Code](img/intro-vid.gif)
+![PostgreSQL for Visual Studio Code](img/intro-schema-agent-vid.gif)
 
 PostgreSQL for Visual Studio Code is the essential extension for working with PostgreSQL databases - locally or in the cloud. Connect, query, build, and chat with your databases with ease, including seamless Entra authentication for Azure Database for PostgreSQL.
 
