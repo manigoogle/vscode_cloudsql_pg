@@ -21,6 +21,11 @@ Browse Azure to easily find and connect to your Azure Database for PostgreSQL se
 
 ![Connect to Azure PostgreSQL](img/connect-azure-vid.gif)
 
+### Explore your database
+Easily explore your database objects, including tables, views, functions, and more.
+
+![Explore your database](img/object-explorer-vid.gif)
+
 ### Schema Visualization
 
 Visualize your database schema quickly in VS Code.
@@ -31,9 +36,13 @@ Visualize your database schema quickly in VS Code.
 
 Chat with your database using the @pgsql agent in Copilot 'Ask' mode. Requires GitHub Copilot.
 
+![Copilot @pgsql agent](img/copilot-ask-pgsql-vid.gif)
+
 ### Agent Mode Tools
 
 Supercharge your workflow with GitHub Copilot Agent Mode tools, which allows the agents to run SQL queries, create tables, design schemas, import CSV files, and more.
+
+![Agent Mode Tools](img/agent-mode-vid.gif)
 
 ### Create a docker PostgreSQL
 
