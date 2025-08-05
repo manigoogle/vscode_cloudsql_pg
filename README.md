@@ -1,103 +1,61 @@
-# PostgreSQL for Visual Studio Code (Preview)
+Google Cloud SQL for Visual Studio Code (Preview)
 
-![PostgreSQL for Visual Studio Code](img/intro-schema-agent-vid.gif)
+This is a Visual Studio Code extension designed to help you connect to your Google Cloud SQL databases directly from VS Code and perform all common database operations—querying, exploring, modifying schemas, importing data, and more—without leaving your development environment.
 
-PostgreSQL for Visual Studio Code is the essential extension for working with PostgreSQL databases - locally or in the cloud. Connect, query, build, and chat with your databases with ease, including seamless Entra authentication for Azure Database for PostgreSQL.
+The project is authored by Mani HK (manihk@google.com).
 
-To learn more about the PostgreSQL extension and how it can simplify building
-applications on PostgreSQL, visit our official [MSFT Learn Documentation].
+Key Features
 
-## Features
+Connect to Cloud SQL DatabasesSeamlessly connect to your Google Cloud SQL instances running PostgreSQL, MySQL, or SQL Server.
 
-Below are some of the key features of the PostgreSQL extension:
+Explore your DatabaseBrowse through tables, views, stored procedures, and other database objects via a friendly visual interface.
 
-### Connect to PostgreSQL
+Run SQL QueriesWrite and execute SQL queries with full IntelliSense support. View results in a grid and export them to CSV, JSON, or Excel.
 
-Connect to any PostgreSQL database.
+Schema VisualizationQuickly visualize your database schema and relationships between tables.
 
-![Connect to PostgreSQL](img/connect-local-vid.gif)
+Command-line PowerRun psql, mysql, or sqlcmd sessions from within VS Code for more advanced usage.
 
-Browse Azure to easily find and connect to your Azure Database for PostgreSQL servers with either password or Entra authentication.
+Optional AI Features (Experimental)Use GitHub Copilot (if enabled) to chat with your database, design schemas, and generate queries using natural language prompts.
 
-![Connect to Azure PostgreSQL](img/connect-azure-vid.gif)
+Getting Started
 
-### Explore your database
-Easily explore your database objects, including tables, views, functions, and more.
+Install the extension from the Visual Studio Code Marketplace.
 
-![Explore your database](img/object-explorer-vid.gif)
+Open the Command Palette (Ctrl+Shift+P or Cmd+Shift+P on macOS) and search for Cloud SQL: Connect.
 
-### Schema Visualization
+Enter your instance details and credentials.
 
-Visualize your database schema quickly in VS Code.
+Start exploring or writing queries in a .sql file.
 
-![Schema Visualization](img/schema-viz-vid.gif)
+To enable experimental Copilot integrations:
 
-### Copilot @pgsql agent
+Open settings (Ctrl + ,)
 
-Chat with your database using the @pgsql agent in Copilot 'Ask' mode. Requires GitHub Copilot.
+Search for Cloud SQL Copilot
 
-![Copilot @pgsql agent](img/copilot-ask-pgsql-vid.gif)
+Enable the experimental features
 
-### Agent Mode Tools
+You’ll be prompted to reload VS Code to activate Copilot features.
 
-Supercharge your workflow with GitHub Copilot Agent Mode tools, which allows the agents to run SQL queries, create tables, design schemas, import CSV files, and more.
+Feedback and Support
 
-![Agent Mode Tools](img/agent-mode-vid.gif)
+For support, issues, or feature requests, please contact manihk@google.com or open an issue on the repository (if public).
 
-### Create a docker PostgreSQL
+To include debug logs when reporting issues:
 
-Create a PostgreSQL database in a Docker container easily with a few clicks.
+Open the Command Palette.
 
-### Query
+Search for Cloud SQL: Show Extension Logs.
 
-Run queries in a connected, intellisense-enabled VS Code editor. Results are displayed in a grid view, and you can easily export the results to CSV, JSON, or Excel.
+Copy and share the logs, after reviewing them for sensitive information.
 
-### Run psql
+Platform Support
 
-Quickly connect psql to any of your databases, including Azure Database for PostgreSQL with Entra authentication.
+✅ Windows
 
-## Usage
+✅ macOS
 
-Get started with the PostgreSQL extension by installing it from the [Visual Studio Code Extension Market](https://marketplace.visualstudio.com/items?itemName=ms-ossdata.vscode-pgsql).
+✅ Linux
 
-By default, Copilot integrations are disabled as they are still experimental features. To enable these, open your settings in `File -> Preferences -> Settings` or by hitting `ctrl + ,` then search for `pgsql copilot` and check the box for `Pgsql > Copilot : Enable`. This will prompt you to reload your window to apply the changes, after which you will be able to use the Copilot features.
-
-![Agent Mode Tools](img/enable-agent-mode.png)
-
-## Feedback
-
-For details on how to receive support for this extension, please see the
-[SUPPORT.md](SUPPORT.md) document.
-
-When reporting issues, it may be helpful to include debug logs. You can view
-extension logs for the current session by:
-
-1. Opening the Command Palette (Ctrl+Shift+P or Cmd+Shift+P on macOS).
-2. Typing `PGSQL: Show Extension Logs` and selecting the option.
-3. The logs will be displayed in the Output panel. You can copy and paste the logs from there.
-
-The Tools Service also outputs logs to disk, which can be accessed by running
-this command in the Command Palette:
-
-- `PGSQL: Show Tools Service Logs`.
-
-In rarer cases, the logs may be found in the VS Code logging directory, per
-session. To open the session log folder, run this command in the Command
-Palette:
-
-- `Developer: Open Logs Folder`.
-
-Look for log files whose name contains the terms:
-
-- `Microsoft PostgreSQL Tools Service`
-- `Microsoft PostgreSQL`
-
-All of these logs could include host names, user names and other data that may be
-sensitive. Please review their contents before sharing these logs with others, or
-attaching them to an issue.
-
-## Supported Operating Systems
-
-The extension is supported on recent Windows, macOS, and Linux distributions. Experimental
-support for ARM64 is available on Linux and macOS.
-
+⚠️ Experimental support for ARM64 on macOS and Linux
